@@ -9,7 +9,9 @@ public class run {
         	JSONObject obj = new JSONObject(req.body());
         	String requestText = obj.getString("text");
         	res.status(200);
-			return org.apache.commons.codec.digest.DigestUtils.sha256Hex(requestText);
+			JSONObject response = new JSONObject();
+			response.put("hash", org.apache.commons.codec.digest.DigestUtils.sha256Hex(requestText));
+			return response;
         });
     }
 }
