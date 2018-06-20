@@ -6,7 +6,7 @@ function framWords(str) {
     const stars = '*'.repeat(maxWidth + 4); // compensate for two characters on botg sides of the string
     const arr = [];
     splitedText.forEach(txt => arr.push(
-        `* ${txt} ${' '.repeat(maxWidth - txt.length)}*\n`
+        `* ${txt} *\n`
     ));
     const framedWord = `${stars}\n${arr.join('')}${stars}`;
     framedWord
