@@ -1,4 +1,4 @@
-const textString = "Megaklinikka Software Developer test";
+const textString = "Hello from a world";
 
 function framWords(str) {
     const splitedText = str.split(' ');
